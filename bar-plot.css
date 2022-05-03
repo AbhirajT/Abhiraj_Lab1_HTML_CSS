@@ -1,0 +1,129 @@
+body{
+    text-align: center;
+}
+h1{
+    color: red;
+}
+
+.bar-graph-outer-section
+{
+    padding: 10px;
+    background-color: lightgrey;
+    display: inline-block;
+    margin-top: 10%;
+}
+
+.bar-graph-inner
+{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.bar-graph
+{
+    width: 35px;
+    height: 300px;
+    background-color: white;
+    position: relative;
+}
+
+/* [class^="bar-graph-full"]
+{
+    position: relative;
+    width: 100%;
+    bottom:0px ;
+    left: 0px;
+    z-index: 1;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-delay: 3s;
+} */
+
+.bar-graph-full-30
+{
+    position: relative;
+    width: 100%;
+    bottom:0px ;
+    left: 0px;
+    z-index: 1;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 5;
+    animation-name: bar-graph-30 ;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+@keyframes bar-graph-30
+{
+    0%
+    {
+        height: 100%;
+        background-color: white;
+    }
+ 
+    100%
+    {
+        height: 70%;
+        background-color: grey;
+    }
+}
+
+.bar-graph-full-40
+{
+    position: relative;
+    width: 100%;
+    bottom:0px ;
+    left: 0px;
+    z-index: 1;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 5;
+    animation-name: bar-graph-40 ;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+
+@keyframes bar-graph-40
+{
+    0%
+    {
+        height: 100%;
+        background-color: white;
+    }
+ 
+    100%
+    {
+        height: 60%;
+        background-color: grey;
+    }
+}
+
+.bar-graph-full-80
+{
+    position: relative;
+    width: 100%;
+    bottom:0px ;
+    left: 0px;
+    z-index: 1;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 5;
+    animation-name: bar-graph-80 ;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+@keyframes bar-graph-80
+{
+   0%
+   {
+       height: 100%;
+       background-color: white;
+   }
+
+   100%
+   {
+       height: 20%;
+       background-color: grey;
+   }
+}
